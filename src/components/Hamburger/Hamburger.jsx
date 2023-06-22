@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import "./Hamburger.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 
 export default function Hamburger({ children }) {
   const [isOpen, setOpen] = useState(false);
 
   return (
     <>
-      <button onClick={() => setOpen((prevState) => !prevState)}>Burger</button>
+      <button onClick={() => setOpen((prevState) => !prevState)}>
+        <FontAwesomeIcon icon={faBars} />
+      </button>
 
       <div className={`hamburger ${isOpen ? "open" : ""}`}>
         <button
@@ -18,7 +22,7 @@ export default function Hamburger({ children }) {
           }}
           onClick={() => setOpen((prevState) => !prevState)}
         >
-          Burger
+          <FontAwesomeIcon icon={faX} />
         </button>
         {children}
       </div>
