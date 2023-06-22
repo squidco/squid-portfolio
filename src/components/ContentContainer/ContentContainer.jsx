@@ -1,8 +1,10 @@
-import React from 'react'
-import "./ContentContainer.css"
+import React from "react";
+import "./ContentContainer.css";
 
-export default function ContentContainer({children}) {
+export default function ContentContainer({ children, className, id }) {
   return (
-    <div className='content-container'>{children}</div>
-  )
+    <div className={`content-container ${className ? className : ""}`} id={id}>
+      {children}
+    </div>
+  );
 }
