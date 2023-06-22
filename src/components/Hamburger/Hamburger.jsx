@@ -7,14 +7,21 @@ export default function Hamburger({ children }) {
   return (
     <>
       <button onClick={() => setOpen((prevState) => !prevState)}>Burger</button>
-      {isOpen && (
-        <div className="hamburger">
-          <button onClick={() => setOpen((prevState) => !prevState)}>
-            Burger
-          </button>
-          {children}
-        </div>
-      )}
+
+      <div className={`hamburger ${isOpen ? "open" : ""}`}>
+        <button
+          style={{
+            position: "absolute",
+            right: "0",
+            top: "0",
+            margin: "1rem",
+          }}
+          onClick={() => setOpen((prevState) => !prevState)}
+        >
+          Burger
+        </button>
+        {children}
+      </div>
     </>
   );
 }
