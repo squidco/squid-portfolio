@@ -11,7 +11,7 @@
   justify-content: center;
   width: 300px;
   transform: translate3d(100vw, 0, 0);
-  transition: transform 1s;
+  transition: transform .8s;
 }
 
 .hamburger a {
@@ -22,8 +22,7 @@
   border: 3px solid rgb(141, 141, 141);
   border-radius: 1rem;
   padding: 1rem;
-  color: rgb(192, 192, 192);
-  background-color: rgb(141, 141, 141);
+  color: rgb(141, 141, 141);
   transition: border, background-color 0.5s;
 }
 
