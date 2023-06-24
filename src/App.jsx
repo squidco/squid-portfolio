@@ -1,35 +1,62 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import ContentContainer from "./components/ContentContainer/ContentContainer";
+import Nav from "./components/Nav/Nav";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <Nav />
+      <ContentContainer id="about">
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facilis
+          esse voluptatem saepe. Itaque rem ad nemo doloribus vel! Omnis
+          mollitia dolore ab veritatis esse deleniti natus unde reiciendis
+          cupiditate.
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facilis
+          esse voluptatem saepe. Itaque rem ad nemo doloribus vel! Omnis
+          mollitia dolore ab veritatis esse deleniti natus unde reiciendis
+          cupiditate.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facilis
+          esse voluptatem saepe. Itaque rem ad nemo doloribus vel! Omnis
+          mollitia dolore ab veritatis esse deleniti natus unde reiciendis
+          cupiditate.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facilis
+          esse voluptatem saepe. Itaque rem ad nemo doloribus vel! Omnis
+          mollitia dolore ab veritatis esse deleniti natus unde reiciendis
+          cupiditate.
+        </p>
+      </ContentContainer>
+      <ContentContainer id="projects">
+        <div>Stuff inside the div</div>
+        <div>Stuff inside the div</div>
+        <div>Stuff inside the div</div>
+        <div>Stuff inside the div</div>
+      </ContentContainer>
+      <ContentContainer id="resume">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facilis
+          esse voluptatem saepe. Itaque rem ad nemo doloribus vel! Omnis
+          mollitia dolore ab veritatis esse deleniti natus unde reiciendis
+          cupiditate.
+        </p>
+      </ContentContainer>
+      <ContentContainer id="contact">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facilis
+          esse voluptatem saepe. Itaque rem ad nemo doloribus vel! Omnis
+          mollitia dolore ab veritatis esse deleniti natus unde reiciendis
+          cupiditate.
+        </p>
+      </ContentContainer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
