@@ -1,5 +1,7 @@
 import React from "react";
+import { useState } from "react";
 import Hamburger from "../Hamburger/Hamburger";
+import NavControls from "../NavControls/NavControls";
 import "./Nav.css";
 
 export default function Nav() {
@@ -7,12 +9,7 @@ export default function Nav() {
     <div className="nav">
       <p>AP</p>
 
-      <Hamburger>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
-      </Hamburger>
+      <NavControls />
     </div>
   );
 }

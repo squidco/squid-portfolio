@@ -11,7 +11,7 @@
   justify-content: center;
   width: 300px;
   transform: translate3d(100vw, 0, 0);
-  transition: transform .8s;
+  transition: transform 0.8s;
 }
 
 .hamburger a {
@@ -19,7 +19,6 @@
   width: 200px;
   font-size: 2rem;
   margin: 2rem 0;
-  border: 3px solid rgb(141, 141, 141);
   border-radius: 1rem;
   padding: 1rem;
   color: rgb(141, 141, 141);
@@ -27,11 +26,20 @@
 }
 
 .hamburger a:hover {
-  border: 3px solid rgb(93, 141, 255);
   background-color: rgb(93, 141, 255);
+  border-radius: 1rem;
   color: white;
 }
 
 .open {
   transform: translate3d(0, 0, 0);
+}
+
+@media screen and (min-width: 480px) {
+  .hamburger {
+    display: none;
+  }
+  .menu-button {
+    display: none;
+  }
 }
