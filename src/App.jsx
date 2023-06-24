@@ -7,10 +7,10 @@ import ProjectContainer from "./components/ProjectContainer/ProjectContainer";
 
 function App() {
   const projects = [
-    { title: "TGBL", url: "github.com" },
-    { title: "TGBL", url: "github.com" },
-    { title: "TGBL", url: "github.com" },
-    { title: "TGBL", url: "github.com" },
+    { title: "TGBL", url: "https://github.com" },
+    { title: "TGBL", url: "https://github.com" },
+    { title: "TGBL", url: "https://github.com" },
+    { title: "TGBL", url: "https://github.com" },
   ];
 
   return (
