@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 
 export default function Hamburger({ children }) {
+  // renders a button on the nav bar and a menu off screen that when the button is pressed
+  // slides in from the right side
+  // slide in is done with css
   const [isOpen, setOpen] = useState(false);
 
   return (
