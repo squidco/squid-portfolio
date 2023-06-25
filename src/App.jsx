@@ -2,8 +2,16 @@ import { useState } from "react";
 import ContentContainer from "./components/ContentContainer/ContentContainer";
 import Nav from "./components/Nav/Nav";
 import "./App.css";
+import ProjectContainer from "./components/ProjectContainer/ProjectContainer";
 
 function App() {
+  const [projects, setProjects] = useState([
+    { title: "TGBL", url: "https://github.com/SquidDOTjpeg/TGBL", deployedURL: "" },
+    { title: "TGBL", url: "https://github.com" },
+    { title: "TGBL", url: "https://github.com" },
+    { title: "TGBL", url: "https://github.com" },
+  ]);
+
   return (
     <>
       <Nav />
@@ -34,10 +42,7 @@ function App() {
         </p>
       </ContentContainer>
       <ContentContainer id="projects">
-        <div>Stuff inside the div</div>
-        <div>Stuff inside the div</div>
-        <div>Stuff inside the div</div>
-        <div>Stuff inside the div</div>
+        <ProjectContainer projectArray={projects} />
       </ContentContainer>
       <ContentContainer id="resume">
         <p>
