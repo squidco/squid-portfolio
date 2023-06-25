@@ -5,6 +5,7 @@ import "./App.css";
 import ProjectContainer from "./components/ProjectContainer/ProjectContainer";
 
 function App() {
+  // state to store project objects to be rendered by the project container component
   const [projects, setProjects] = useState([
     { title: "TGBL", url: "https://github.com/SquidDOTjpeg/TGBL", deployedURL: "" },
     { title: "TGBL", url: "https://github.com" },
