@@ -2,16 +2,15 @@ import { useState } from "react";
 import ContentContainer from "./components/ContentContainer/ContentContainer";
 import Nav from "./components/Nav/Nav";
 import "./App.css";
-import ProjectCard from "./components/ProjectCard/ProjectCard";
 import ProjectContainer from "./components/ProjectContainer/ProjectContainer";
 
 function App() {
-  const projects = [
+  const [projects, setProjects] = useState([
+    { title: "TGBL", url: "https://github.com/SquidDOTjpeg/TGBL", deployedURL: "" },
     { title: "TGBL", url: "https://github.com" },
     { title: "TGBL", url: "https://github.com" },
     { title: "TGBL", url: "https://github.com" },
-    { title: "TGBL", url: "https://github.com" },
-  ];
+  ]);
 
   return (
     <>
