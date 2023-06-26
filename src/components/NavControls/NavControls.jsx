@@ -51,13 +51,6 @@ export default function NavControls() {
       </div>
     );
   } else {
-    return (
-      <Hamburger>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
-      </Hamburger>
-    );
+    return <Hamburger />;
   }
 }

@@ -11,8 +11,11 @@ export default function Hamburger({ children }) {
 
   return (
     <>
-      <button className="menu-button" onClick={() => setOpen((prevState) => !prevState)}>
-        <FontAwesomeIcon style={{height: "2rem"}} icon={faBars} />
+      <button
+        className="menu-button"
+        onClick={() => setOpen((prevState) => !prevState)}
+      >
+        <FontAwesomeIcon style={{ height: "2rem" }} icon={faBars} />
       </button>
 
       <div className={`hamburger ${isOpen ? "open" : ""}`}>
@@ -21,13 +24,24 @@ export default function Hamburger({ children }) {
             position: "absolute",
             right: "0",
             top: "0",
-            margin: "1rem",
+            margin: "2rem",
           }}
           onClick={() => setOpen((prevState) => !prevState)}
         >
-          <FontAwesomeIcon style={{height: "2rem"}} icon={faX} />
+          <FontAwesomeIcon style={{ height: "2rem" }} icon={faX} />
         </button>
-        {children}
+        <a onClick={() => setOpen((prevState) => !prevState)} href="#about">
+          About
+        </a>
+        <a onClick={() => setOpen((prevState) => !prevState)} href="#projects">
+          Projects
+        </a>
+        <a onClick={() => setOpen((prevState) => !prevState)} href="#resume">
+          Resume
+        </a>
+        <a onClick={() => setOpen((prevState) => !prevState)} href="#contact">
+          Contact
+        </a>
       </div>
     </>
   );
