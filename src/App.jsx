@@ -7,10 +7,21 @@ import ProjectContainer from "./components/ProjectContainer/ProjectContainer";
 function App() {
   // state to store project objects to be rendered by the project container component
   const [projects, setProjects] = useState([
-    { title: "TGBL", url: "https://github.com/SquidDOTjpeg/TGBL", deployedURL: "" },
-    { title: "TGBL", url: "https://github.com" },
-    { title: "TGBL", url: "https://github.com" },
-    { title: "TGBL", url: "https://github.com" },
+    {
+      title: "TGBL",
+      url: "https://github.com/SquidDOTjpeg/TGBL",
+      deployedURL: "https://thegoodboylist.herokuapp.com/",
+    },
+    {
+      title: "Coming Soon",
+      url: "https://github.com",
+      deployedURL: "https://thegoodboylist.herokuapp.com/",
+    },
+    {
+      title: "Coming Soon",
+      url: "https://github.com",
+      deployedURL: "https://thegoodboylist.herokuapp.com/",
+    }
   ]);
 
   return (

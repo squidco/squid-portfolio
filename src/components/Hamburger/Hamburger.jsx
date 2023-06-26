@@ -24,7 +24,7 @@ export default function Hamburger({ children }) {
             position: "absolute",
             right: "0",
             top: "0",
-            margin: "1rem",
+            margin: "2rem",
           }}
           onClick={() => setOpen((prevState) => !prevState)}
         >
