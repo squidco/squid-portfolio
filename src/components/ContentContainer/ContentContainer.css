@@ -10,7 +10,14 @@
 }
 
 @media screen and (min-width: 1080px) {
-    .content-container{
-        margin: 20px 250px;
-    }
+  .content-container {
+    margin: 20px 250px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content-container {
+    margin: 5vh 0px 0px 0px;
+    height: fit-content;
+  }
 }
