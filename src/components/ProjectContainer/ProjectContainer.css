@@ -2,3 +2,9 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+@media screen and (max-width: 480px) {
+    .project-container{
+        flex-direction: column;
+    }
+}
