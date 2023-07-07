@@ -4,7 +4,7 @@ import Nav from "./components/Nav/Nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import Resume from "./assets/Anthony Pillow 2023 Resume.pdf";
+import Resume from "./assets/Anthony Pillow Current Resume.pdf";
 import "./App.css";
 import ProjectContainer from "./components/ProjectContainer/ProjectContainer";
 
@@ -32,10 +32,11 @@ function App() {
     <>
       <Nav />
       <ContentContainer id="about">
-        <h1>Howdy howdy,</h1>
+        <h1 className="outline">Howdy,</h1>
         <p>
-          I'm Anthony Pillow a photographer, rock climber, and full stack web
-          developer. I appreciate you checking out my portfolio page.
+          I'm Anthony Pillow: photographer, rock climber, and full stack web
+          developer. If I'm not spending time on my hobbies I'm usually hanging
+          out with friends or exploring abandoned places.
         </p>
         <p>
           I started coding after following courses on Udemy and decided to
@@ -51,37 +52,29 @@ function App() {
         </p>
       </ContentContainer>
       <ContentContainer id="projects">
-        <h1>Projects</h1>
+        <h1 className="outline">Projects</h1>
         <ProjectContainer projectArray={projects} />
       </ContentContainer>
+
       <ContentContainer id="resume">
-        <h1>Skills and Resume</h1>
+        <div>
+          <h1 className="outline">Skills and Resume</h1>
+          <a href={Resume} download className="nav-links">
+            <FontAwesomeIcon icon={faDownload} /> Download Resume
+          </a>
+        </div>
         <div
           style={{
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-around",
-            width: "100%"
+            width: "100%",
           }}
-        >
-          <ul>
-            <li>React</li>
-            <li>Mongo</li>
-            <li>Node.js</li>
-            <li>HTML</li>
-            <li>CSS & CSS Frameworks</li>
-            <li>API integration</li>
-            <li>Heroku Deployment</li>
-          </ul>
-          <div>
-            <a href={Resume} download className="nav-links">
-              <FontAwesomeIcon icon={faDownload} /> Download Resume
-            </a>
-          </div>
-        </div>
+        ></div>
       </ContentContainer>
+
       <ContentContainer id="contact">
-        <h1>Contact Me</h1>
+        <h1 className="outline">Contact Me</h1>
         <div
           style={{
             display: "flex",
@@ -89,9 +82,11 @@ function App() {
             justifyContent: "space-evenly",
           }}
         >
-          <p><span>
+          <p>
+            <span>
               <FontAwesomeIcon icon={faEnvelope} /> anthonypillow18@gmail.com
-            </span></p>
+            </span>
+          </p>
           <p>
             <span>
               <FontAwesomeIcon icon={faGithub} /> SquidDOTjpeg
