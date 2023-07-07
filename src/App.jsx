@@ -4,7 +4,7 @@ import Nav from "./components/Nav/Nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import Resume from "./assets/Anthony Pillow 2023 Resume.pdf";
+import Resume from "./assets/Anthony Pillow Current Resume.pdf";
 import "./App.css";
 import ProjectContainer from "./components/ProjectContainer/ProjectContainer";
 
