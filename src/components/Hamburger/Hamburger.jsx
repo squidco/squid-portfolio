@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import "./Hamburger.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
+import Resume from "../../assets/Anthony_Pillow_Current_Resume.pdf";
+
 
 export default function Hamburger({ children }) {
   // renders a button on the nav bar and a menu off screen that when the button is pressed
@@ -42,6 +45,9 @@ export default function Hamburger({ children }) {
         <a onClick={() => setOpen((prevState) => !prevState)} href="#contact">
           Contact
         </a>
+        <a href={Resume} download className="nav-links">
+            <FontAwesomeIcon icon={faDownload} />  Resume
+          </a>
       </div>
     </>
   );
