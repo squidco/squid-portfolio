@@ -13,17 +13,17 @@ function App() {
   const [projects, setProjects] = useState([
     {
       title: "TGBL",
-      url: "https://github.com/SquidDOTjpeg/TGBL",
+      repoURL: "https://github.com/SquidDOTjpeg/TGBL",
       deployedURL: "https://thegoodboylist.herokuapp.com/",
     },
     {
       title: "Coming Soon",
-      url: "https://github.com",
+      repoURL: "https://github.com",
       deployedURL: "https://thegoodboylist.herokuapp.com/",
     },
     {
       title: "Coming Soon",
-      url: "https://github.com",
+      repoURL: "https://github.com",
       deployedURL: "https://thegoodboylist.herokuapp.com/",
     },
   ]);
