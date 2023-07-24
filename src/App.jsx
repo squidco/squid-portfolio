@@ -6,7 +6,7 @@ import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Resume from "./assets/Anthony_Pillow_Current_Resume.pdf";
 import "./App.css";
-import ProjectContainer from "./components/ProjectContainer/ProjectContainer";
+import ProjectContainer from "./components/ProjectContainer";
 
 function App() {
   // state to store project objects to be rendered by the project container component
@@ -34,6 +34,8 @@ function App() {
         <Nav />
       </header>
       <main>
+        {/* === About Section === */}
+
         <ContentContainer id="about">
           <h1 className="outline">Howdy,</h1>
           <p>
@@ -54,10 +56,15 @@ function App() {
             with any inquiries.
           </p>
         </ContentContainer>
+
+        {/* === Projects Section === */}
+
         <ContentContainer id="projects">
           <h1 className="outline">Projects</h1>
           <ProjectContainer projectArray={projects} />
         </ContentContainer>
+
+        {/* === Resume Section === */}
 
         <ContentContainer id="resume">
           <div>
@@ -75,6 +82,8 @@ function App() {
             }}
           ></div>
         </ContentContainer>
+
+        {/* === Contact Section === */}
 
         <ContentContainer id="contact">
           <h1 className="outline">Contact Me</h1>

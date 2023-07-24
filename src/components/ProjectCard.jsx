@@ -1,5 +1,4 @@
 import React from "react";
-import "./ProjectCard.css";
 
 export default function ProjectCard({ title, repoURL, deployedURL }) {
   // renders a card that has a title, url, and deployedURL
@@ -7,8 +6,12 @@ export default function ProjectCard({ title, repoURL, deployedURL }) {
 
   return (
     <div className="project-card">
-      <a className="nav-links" href={deployedURL} target="_blank"><span className="project-title">{title}</span></a>
-      <a className="nav-links" href={repoURL} target="_blank">Github</a>
+      <a className="nav-links" href={deployedURL} target="_blank">
+        <span className="project-title">{title}</span>
+      </a>
+      <a className="nav-links" href={repoURL} target="_blank">
+        Github
+      </a>
     </div>
   );
 }
