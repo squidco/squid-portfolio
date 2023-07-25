@@ -16,7 +16,7 @@ function App() {
       repoURL: "https://github.com/SquidDOTjpeg/TGBL",
       deployedURL: "https://thegoodboylist.herokuapp.com/",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque optio quibusdam sed unde rem nesciunt vero quam, odit ex ea quidem fugit ipsam cupiditate debitis at dolorem magnam aspernatur praesentium!",
+        "Was the sole designer and developer on a web app, created from scratch, for Dungeons and Dragons spell casters to alleviate some of the upkeep of tracking spell slots, spells, and other character information to improve the quality of gameplay and time management",
       technologiesUsed: [
         "React",
         "Mongo",
