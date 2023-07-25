@@ -6,7 +6,7 @@ import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Resume from "./assets/Anthony_Pillow_Current_Resume.pdf";
 import "./App.css";
-import ProjectContainer from "./components/ProjectContainer/ProjectContainer";
+import ProjectContainer from "./components/ProjectContainer";
 
 function App() {
   // state to store project objects to be rendered by the project container component
@@ -15,16 +15,19 @@ function App() {
       title: "TGBL",
       repoURL: "https://github.com/SquidDOTjpeg/TGBL",
       deployedURL: "https://thegoodboylist.herokuapp.com/",
-    },
-    {
-      title: "Coming Soon",
-      repoURL: "https://github.com",
-      deployedURL: "https://thegoodboylist.herokuapp.com/",
-    },
-    {
-      title: "Coming Soon",
-      repoURL: "https://github.com",
-      deployedURL: "https://thegoodboylist.herokuapp.com/",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque optio quibusdam sed unde rem nesciunt vero quam, odit ex ea quidem fugit ipsam cupiditate debitis at dolorem magnam aspernatur praesentium!",
+      technologiesUsed: [
+        "React",
+        "Mongo",
+        "Node",
+        "Express",
+        "Bootstrap",
+        "Mongoose",
+        "Axios",
+        "NPM",
+        "Node",
+      ],
     },
   ]);
 
@@ -34,6 +37,8 @@ function App() {
         <Nav />
       </header>
       <main>
+        {/* === About Section === */}
+
         <ContentContainer id="about">
           <h1 className="outline">Howdy,</h1>
           <p>
@@ -54,10 +59,15 @@ function App() {
             with any inquiries.
           </p>
         </ContentContainer>
+
+        {/* === Projects Section === */}
+
         <ContentContainer id="projects">
           <h1 className="outline">Projects</h1>
           <ProjectContainer projectArray={projects} />
         </ContentContainer>
+
+        {/* === Resume Section === */}
 
         <ContentContainer id="resume">
           <div>
@@ -75,6 +85,8 @@ function App() {
             }}
           ></div>
         </ContentContainer>
+
+        {/* === Contact Section === */}
 
         <ContentContainer id="contact">
           <h1 className="outline">Contact Me</h1>
