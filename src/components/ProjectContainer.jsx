@@ -12,6 +12,8 @@ export default function ProjectContainer({ projectArray }) {
           title={project.title}
           repoURL={project.repoURL}
           deployedURL={project.deployedURL}
+          description={project.description}
+          technologiesUsed={project.technologiesUsed}
           key={uuid4()}
         />
       ))}

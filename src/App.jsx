@@ -15,16 +15,19 @@ function App() {
       title: "TGBL",
       repoURL: "https://github.com/SquidDOTjpeg/TGBL",
       deployedURL: "https://thegoodboylist.herokuapp.com/",
-    },
-    {
-      title: "Coming Soon",
-      repoURL: "https://github.com",
-      deployedURL: "https://thegoodboylist.herokuapp.com/",
-    },
-    {
-      title: "Coming Soon",
-      repoURL: "https://github.com",
-      deployedURL: "https://thegoodboylist.herokuapp.com/",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque optio quibusdam sed unde rem nesciunt vero quam, odit ex ea quidem fugit ipsam cupiditate debitis at dolorem magnam aspernatur praesentium!",
+      technologiesUsed: [
+        "React",
+        "Mongo",
+        "Node",
+        "Express",
+        "Bootstrap",
+        "Mongoose",
+        "Axios",
+        "NPM",
+        "Node",
+      ],
     },
   ]);
 

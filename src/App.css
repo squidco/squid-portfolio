@@ -49,8 +49,6 @@
 /* PROJECT CARDS */
 
 .project-card {
-  width: 300px;
-  height: 300px;
   margin: 10px;
   display: flex;
   align-items: center;
@@ -66,9 +64,9 @@
   transform: scale(1.05);
 }
 
-.project-card a{
-    font-size: 3rem;
-    margin: .5rem;
+.project-card a {
+  font-size: 3rem;
+  margin: 0.5rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -82,15 +80,40 @@
   }
 }
 
-/* PROJECT CONTAINERS */
+.project-links-container {
+  display: flex;
+  flex-direction: row;
+}
 
-.project-container{
+.project-tech-list {
+}
+
+.project-tech-item {
+  display: inline-block;
+  border-radius: 0.5rem;
+  margin: 5px;
+  color: #141414;
+  background-color: #fff;
+}
+
+.project-tech-item:hover {
+  color: #141414;
+  background-color: #fff;
+}
+
+.project-description{
+  margin: auto;
+}
+
+/* PROJECT CONTAINER */
+
+.project-container {
   display: flex;
   flex-wrap: wrap;
 }
 
 @media screen and (max-width: 480px) {
-  .project-container{
-      flex-direction: column;
+  .project-container {
+    flex-direction: column;
   }
 }
