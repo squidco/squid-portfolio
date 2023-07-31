@@ -22,7 +22,7 @@
 .nav button {
   padding: 0px 10px;
   background-color: transparent;
-  color: rgb(102, 102, 102);
+  color: var(--text-secondary);
   margin: 0px;
 }
 
@@ -35,7 +35,7 @@
   font-size: 1rem;
   border-radius: 1rem;
   padding: 1rem;
-  color: rgb(141, 141, 141);
+  color: var(--text-secondary);
   transition: border, background-color 0.5s;
 }
 

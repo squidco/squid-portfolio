@@ -1,11 +1,24 @@
 :root {
+  /* Variables */
+
+  /* Experimenting with the width */
+
+  --max-width: 700px;
+  --text-primary: rgba(255, 255, 255, 0.87);
+  --text-secondary: rgb(141, 141, 141);
+  --text-tertiary: rgb(102, 102, 102);;
+  --background-primary: #242424;
+  --background-secondary: rgb(80, 80, 80);
+
+  /* Base styling */
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--text-primary);
+  background-color: var(--background-primary);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,7 +29,7 @@
 
 /* Tag Styling */
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
