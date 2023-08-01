@@ -2,9 +2,8 @@ import { useState } from "react";
 import ContentContainer from "./components/ContentContainer/ContentContainer";
 import Nav from "./components/Nav/Nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import Resume from "./assets/Anthony_Pillow_Current_Resume.pdf";
 import "./App.css";
 import ProjectContainer from "./components/ProjectContainer";
 
@@ -65,25 +64,6 @@ function App() {
         <ContentContainer id="projects">
           <h1 className="outline">Projects</h1>
           <ProjectContainer projectArray={projects} />
-        </ContentContainer>
-
-        {/* === Resume Section === */}
-
-        <ContentContainer id="resume">
-          <div>
-            <h1 className="outline">Skills and Resume</h1>
-            <a href={Resume} download className="nav-links">
-              <FontAwesomeIcon icon={faDownload} /> Download Resume
-            </a>
-          </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-around",
-              width: "100%",
-            }}
-          ></div>
         </ContentContainer>
 
         {/* === Contact Section === */}
