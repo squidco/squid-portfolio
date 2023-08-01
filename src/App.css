@@ -82,3 +82,9 @@
     flex-direction: column;
   }
 }
+
+/* SVG LOGO */
+
+.logo{
+  height: 100%;
+}
