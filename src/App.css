@@ -67,8 +67,10 @@
   background-color: #fff;
 }
 
+/* 
 .project-description{
-}
+} 
+*/
 
 /* PROJECT CONTAINER */
 
@@ -85,6 +87,6 @@
 
 /* SVG LOGO */
 
-.logo{
+.logo {
   height: 100%;
 }
