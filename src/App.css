@@ -67,8 +67,10 @@
   background-color: #fff;
 }
 
+/* 
 .project-description{
-}
+} 
+*/
 
 /* PROJECT CONTAINER */
 
@@ -82,3 +84,11 @@
     flex-direction: column;
   }
 }
+
+/* SVG LOGO */
+
+.logo {
+  height: 100%;
+  padding: 0px 10px;
+}
+

@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import Resume from "../../assets/Anthony_Pillow_Current_Resume.pdf";
 
-
 export default function NavControls() {
   // renders the nav controls by checking the screen's size
   // if it is greater than 480px it returns several buttons on the nav bar
@@ -46,15 +45,12 @@ export default function NavControls() {
         <a className="nav-links" href="#projects">
           Projects
         </a>
-        <a className="nav-links" href="#resume">
-          Resume
-        </a>
         <a className="nav-links" href="#contact">
           Contact
         </a>
         <a href={Resume} download className="nav-links">
-            <FontAwesomeIcon icon={faDownload} />  Resume
-          </a>
+          <FontAwesomeIcon icon={faDownload} /> Resume
+        </a>
       </div>
     );
   } else {
