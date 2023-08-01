@@ -6,7 +6,7 @@
   --max-width: 700px;
   --text-primary: rgba(255, 255, 255, 0.87);
   --text-secondary: rgb(141, 141, 141);
-  --text-tertiary: rgb(102, 102, 102);;
+  --text-tertiary: rgb(102, 102, 102);
   --background-primary: #242424;
   --background-secondary: rgb(80, 80, 80);
 
@@ -49,6 +49,8 @@ body {
 
 main {
   padding: 1rem;
+  margin: auto;
+  max-width: var(--max-width);
 }
 
 h1 {
