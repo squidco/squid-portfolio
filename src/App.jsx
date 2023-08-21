@@ -12,6 +12,7 @@ function App() {
   const [projects, setProjects] = useState([
     {
       title: "TGBL",
+      image: "./assets/images/TGBL.png",
       repoURL: "https://github.com/SquidDOTjpeg/TGBL",
       deployedURL: "https://thegoodboylist.herokuapp.com/",
       description:
