@@ -10,6 +10,7 @@ export default function ProjectContainer({ projectArray }) {
       {projectArray.map((project) => (
         <ProjectCard
           title={project.title}
+          image={project.image}
           repoURL={project.repoURL}
           deployedURL={project.deployedURL}
           description={project.description}

@@ -3,6 +3,7 @@ import { v4 as uuid4 } from "uuid";
 
 export default function ProjectCard({
   title,
+  image,
   repoURL,
   deployedURL,
   description,
@@ -14,6 +15,7 @@ export default function ProjectCard({
   return (
     <div className="project-card">
       <h1>{title}</h1>
+      <img src={image} alt={`A screenshot of one of ${title}'s webpages`} className="project-image"/>
       <p className="project-description">{description}</p>
       <ul className="project-tech-list">
         {technologiesUsed.map((tech) => (
