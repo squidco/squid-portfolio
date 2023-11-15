@@ -96,3 +96,31 @@
   padding: 0px 10px;
 }
 
+/* TEXT STYLING */
+
+.big-text {
+  font-size: 3.2rem;
+}
+
+.small-text {
+  font-size: small;
+}
+
+.italicized {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.thin {
+  font-weight: 300;
+}
+
+.outline {
+  font-family: sans-serif;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 2px var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}

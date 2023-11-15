@@ -40,24 +40,27 @@ function App() {
         {/* === About Section === */}
 
         <ContentContainer id="about">
-          <h1 className="outline">Howdy,</h1>
+          <h1 className="outline">Hello there,</h1>
           <p>
-            I'm Anthony Pillow: photographer, rock climber, and full stack web
-            developer. If I'm not spending time on my hobbies I'm usually
-            hanging out with friends or exploring abandoned places.
+            <span className="bold">I'm Anthony Pillow:</span> photographer, rock
+            climber, and full stack web developer.
           </p>
           <p>
-            I started coding after following courses on Udemy and decided to
-            pursue coding through a formal bootcamp hosted at UC Davis
-            Continuing and Professional Education. After completing the 6 month
-            course I went on to join the company that provided the course as an
-            Instructional Specialist and have been keeping my skills sharp while
-            teaching new developers how to code.
+            I love working on{" "}
+            <span className="big-text bold">BIG PROJECTS</span> as well as
+            focusing on the{" "}
+            <span className="thin italicized">tiny details</span>. Working on a
+            team gives me motivation and energy to contribute to something
+            bigger than my individual efforts could create.
           </p>
           <p>
-            Below are my projects, resume and skills info, and how to contact me
-            with any inquiries.
+            I have completed a 6 month web development boot camp and am going
+            back to college in 2024 where I will be studying Computer Science.
+            I've made this step because I have always loved games and want to
+            give myself the skills to be able to work on them or any other
+            projects that catch my eye.
           </p>
+          <p>Below are my projects and how to contact me with any inquiries.</p>
         </ContentContainer>
 
         {/* === Projects Section === */}
