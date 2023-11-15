@@ -4,11 +4,11 @@
   /* Experimenting with the width */
 
   --max-width: 700px;
-  --text-primary: rgba(255, 255, 255, 0.87);
-  --text-secondary: rgb(141, 141, 141);
+  --text-primary: rgba(10, 10, 10, 0.87);
+  --text-secondary: rgb(11, 11, 11);
   --text-tertiary: rgb(102, 102, 102);
-  --background-primary: #242424;
-  --background-secondary: rgb(80, 80, 80);
+  --background-primary: #e6e6e6;
+  --background-secondary: rgb(234, 224, 211);
 
   /* Base styling */
 
@@ -18,7 +18,6 @@
 
   color-scheme: light dark;
   color: var(--text-primary);
-  background-color: var(--background-primary);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -45,6 +44,7 @@ a:hover {
 body {
   margin: 0;
   place-items: center;
+  background-color: var(--background-primary);
 }
 
 main {
@@ -54,7 +54,7 @@ main {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 5.2rem;
   line-height: 1.1;
 }
 
@@ -97,14 +97,5 @@ ul li {
 p {
   font-size: 1.5rem;
   font-weight: normal;
-  text-align: justify;
-}
-
-/* Text Styling */
-
-.outline {
-  font-family: sans-serif;
-  color: rgba(255, 255, 255, 0);
-  -webkit-text-stroke: 1px #f9f9f9;
-  -webkit-font-smoothing: antialiased;
+  text-align: left;
 }
