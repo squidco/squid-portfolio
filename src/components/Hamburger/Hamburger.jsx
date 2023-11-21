@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import PropTypes from "prop-types";
 import "./Hamburger.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
-import Resume from "../../assets/Anthony_Pillow_Current_Resume.pdf";
 
 
 export default function Hamburger({ children }) {
@@ -21,7 +20,10 @@ export default function Hamburger({ children }) {
         <FontAwesomeIcon style={{ height: "2rem" }} icon={faBars} />
       </button>
 
-      <div className={`hamburger ${isOpen ? "open" : ""}`}>
+      <div
+        onClick={() => setOpen((prevState) => !prevState)}
+        className={`hamburger ${isOpen ? "open" : ""}`}
+      >
         <button
           style={{
             position: "absolute",
@@ -33,22 +35,13 @@ export default function Hamburger({ children }) {
         >
           <FontAwesomeIcon style={{ height: "2rem" }} icon={faX} />
         </button>
-        <a onClick={() => setOpen((prevState) => !prevState)} href="#about">
-          About
-        </a>
-        <a onClick={() => setOpen((prevState) => !prevState)} href="#projects">
-          Projects
-        </a>
-        <a onClick={() => setOpen((prevState) => !prevState)} href="#resume">
-          Resume
-        </a>
-        <a onClick={() => setOpen((prevState) => !prevState)} href="#contact">
-          Contact
-        </a>
-        <a href={Resume} download className="nav-links">
-            <FontAwesomeIcon icon={faDownload} />  Resume
-          </a>
+
+        {children}
       </div>
     </>
   );
+}
+
+Hamburger.propTypes = {
+  children: PropTypes.any
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 import ProjectCard from "./ProjectCard";
 import { v4 as uuid4 } from "uuid";
 
@@ -21,3 +21,7 @@ export default function ProjectContainer({ projectArray }) {
     </div>
   );
 }
+
+ProjectContainer.propTypes = {
+  projectArray: PropTypes.array,
+};
