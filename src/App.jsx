@@ -13,7 +13,7 @@ import ThemeToggle from "./components/ThemeToggle";
 
 function App() {
   // state to store project objects to be rendered by the project container component
-  const [projects, setProjects] = useState([
+  const [projects] = useState([
     {
       title: "TGBL",
       image: "./assets/images/TGBL.png",
