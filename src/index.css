@@ -27,10 +27,10 @@
 
 [data-theme="dark"] {
   --text-primary: #dcdcdc;
-  --text-secondary: #7194af;
+  --text-secondary: #c0c4c6;
   --text-tertiary: #08151f;
   --background-primary: #192c3a;
-  --background-secondary: #0d2536;
+  --background-secondary: #163d58;
 }
 
 /* Tag Styling */
