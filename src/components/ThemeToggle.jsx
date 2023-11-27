@@ -17,7 +17,7 @@ export default function ThemeToggle({ toggle }) {
   }
 
   return (
-    <div>
+    <div style={{display: "inline"}}>
       <button type="button" onClick={toggleTheme}>
         <img
           src={
