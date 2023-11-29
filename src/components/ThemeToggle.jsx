@@ -17,7 +17,7 @@ export default function ThemeToggle({ toggle }) {
   }
 
   return (
-    <div style={{display: "inline"}}>
+    <>
       <button type="button" onClick={toggleTheme}>
         <img
           src={
@@ -27,7 +27,7 @@ export default function ThemeToggle({ toggle }) {
           alt={icon === "dark" ? "A small sun icon" : "A small moon icon"}
         />
       </button>
-    </div>
+    </>
   );
 }
 
