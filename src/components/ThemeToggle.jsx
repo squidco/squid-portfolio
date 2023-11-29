@@ -23,7 +23,7 @@ export default function ThemeToggle({ toggle }) {
           src={
             icon === "dark" ? "assets/images/sun.svg" : "assets/images/moon.svg"
           }
-          style={{ width: "1rem" }}
+          style={{ width: "1.5rem" }}
           alt={icon === "dark" ? "A small sun icon" : "A small moon icon"}
         />
       </button>

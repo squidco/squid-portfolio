@@ -34,7 +34,7 @@ export default function NavControls({ children }) {
   const { width } = useWindowDimensions();
 
   if (width > 480) {
-    return <div>{children}</div>;
+    return <div style={{display: "flex"}}>{children}</div>;
   } else {
     return <Hamburger>{children}</Hamburger>;
   }
