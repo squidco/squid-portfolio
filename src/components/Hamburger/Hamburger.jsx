@@ -4,7 +4,6 @@ import "./Hamburger.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 
-
 export default function Hamburger({ children }) {
   // renders a button on the nav bar and a menu off screen that when the button is pressed
   // slides in from the right side
@@ -31,7 +30,6 @@ export default function Hamburger({ children }) {
             top: "0",
             margin: "2rem",
           }}
-          onClick={() => setOpen((prevState) => !prevState)}
         >
           <FontAwesomeIcon style={{ height: "2rem" }} icon={faX} />
         </button>
@@ -43,5 +41,5 @@ export default function Hamburger({ children }) {
 }
 
 Hamburger.propTypes = {
-  children: PropTypes.any
-}
+  children: PropTypes.any,
+};
