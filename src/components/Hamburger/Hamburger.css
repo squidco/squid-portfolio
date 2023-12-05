@@ -3,7 +3,7 @@
   position: fixed;
   right: 0;
   top: 0;
-  background-color: rgb(192, 192, 192);
+  background-color: var(--background-secondary);
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -33,4 +33,13 @@
 
 .open {
   transform: translate3d(0, 0, 0);
+}
+
+.hamburger button {
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.hamburger button img {
+  width: 2.5rem;
 }

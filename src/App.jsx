@@ -1,15 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ContentContainer from "./components/ContentContainer/ContentContainer";
 import Nav from "./components/Nav/Nav";
+import NavControls from "./components/NavControls/NavControls";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import Resume from "./assets/Anthony_Pillow_Current_Resume.pdf";
 import "./App.css";
 import ProjectContainer from "./components/ProjectContainer";
+import ThemeToggle from "./components/ThemeToggle";
 
 function App() {
   // state to store project objects to be rendered by the project container component
-  const [projects, setProjects] = useState([
+  const [projects] = useState([
     {
       title: "TGBL",
       image: "./assets/images/TGBL.png",
@@ -31,10 +35,43 @@ function App() {
     },
   ]);
 
+  // Set page theme
+  const [theme, setTheme] = useState();
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme") || "light";
+    setTheme(savedTheme);
+  }, []);
+
+  function handleThemeToggle() {
+    if (theme === "dark") {
+      setTheme("light");
+      localStorage.setItem("theme", "light")
+    } else {
+      setTheme("dark");
+      localStorage.setItem("theme", "dark")
+    }
+  }
+
   return (
-    <>
+    <div className="app" data-theme={theme}>
       <header>
-        <Nav />
+        <Nav>
+          <NavControls>
+            <a className="nav-links" href="#about">
+              About
+            </a>
+            <a className="nav-links" href="#projects">
+              Projects
+            </a>
+            <a className="nav-links" href="#contact">
+              Contact
+            </a>
+            <a href={Resume} download className="nav-links">
+              <FontAwesomeIcon icon={faDownload} /> Resume
+            </a>
+            <ThemeToggle toggle={handleThemeToggle} />
+          </NavControls>
+        </Nav>
       </header>
       <main>
         {/* === About Section === */}
@@ -88,7 +125,7 @@ function App() {
           </div>
         </ContentContainer>
       </main>
-    </>
+    </div>
   );
 }
 

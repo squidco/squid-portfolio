@@ -1,11 +1,8 @@
-import React from "react";
+import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
 import Hamburger from "../Hamburger/Hamburger";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import Resume from "../../assets/Anthony_Pillow_Current_Resume.pdf";
 
-export default function NavControls() {
+export default function NavControls({ children }) {
   // renders the nav controls by checking the screen's size
   // if it is greater than 480px it returns several buttons on the nav bar
   // if it is smaller than 480px it returns a hamburger menu which slides out from the side of the screen
@@ -34,26 +31,15 @@ export default function NavControls() {
     return windowDimensions;
   }
 
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
   if (width > 480) {
-    return (
-      <div>
-        <a className="nav-links" href="#about">
-          About
-        </a>
-        <a className="nav-links" href="#projects">
-          Projects
-        </a>
-        <a className="nav-links" href="#contact">
-          Contact
-        </a>
-        <a href={Resume} download className="nav-links">
-          <FontAwesomeIcon icon={faDownload} /> Resume
-        </a>
-      </div>
-    );
+    return <div style={{display: "flex"}}>{children}</div>;
   } else {
-    return <Hamburger />;
+    return <Hamburger>{children}</Hamburger>;
   }
 }
+
+NavControls.propTypes = {
+  children: PropTypes.any,
+};
