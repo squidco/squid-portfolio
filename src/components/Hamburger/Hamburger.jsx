@@ -41,5 +41,5 @@ export default function Hamburger({ children }) {
 }
 
 Hamburger.propTypes = {
-  children: PropTypes.any,
+  children: PropTypes.array,
 };
