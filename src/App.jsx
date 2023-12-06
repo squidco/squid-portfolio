@@ -78,6 +78,7 @@ function App() {
 
         <ContentContainer id="about">
           <h1 className="outline">Hello there,</h1>
+          <img src="./assets/images/profile-picture.jpg" alt="A picture of a blonde guy who happens to be myself" className="profile-picture" />
           <p>
             <span className="bold">I'm Anthony Pillow:</span> photographer, rock
             climber, and full stack web developer.
