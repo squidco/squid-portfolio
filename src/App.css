@@ -1,4 +1,5 @@
 .app {
+  margin-top: 5vh;
   background-color: var(--background-primary);
   transition: all 1s;
 }
@@ -132,4 +133,12 @@
   color: rgba(255, 255, 255, 0);
   -webkit-text-stroke: 2px var(--text-primary);
   -webkit-font-smoothing: antialiased;
+}
+
+/* Profile Picture */
+
+.profile-picture{
+  display: block;
+  width: 30rem;
+  border-radius: 50%;
 }
