@@ -20,7 +20,7 @@ function App() {
       repoURL: "https://github.com/SquidDOTjpeg/TGBL",
       deployedURL: "https://thegoodboylist.herokuapp.com/",
       description:
-        "Was the sole designer and developer on a web app, created from scratch, for Dungeons and Dragons spell casters to alleviate some of the upkeep of tracking spell slots, spells, and other character information to improve the quality of gameplay and time management",
+        "An app that assists Dungeons and Dragons spellcasters with tracking their spellslots. Created from scratch with Create React App and recently migrated to Vite.js.",
       technologiesUsed: [
         "React",
         "Mongo",
@@ -31,6 +31,7 @@ function App() {
         "Axios",
         "NPM",
         "Node",
+        "Vite.js"
       ],
     },
   ]);
@@ -94,7 +95,7 @@ function App() {
           <p>
             I have completed a 6 month web development boot camp and am going
             back to college in 2024 where I will be studying Computer Science.
-            I've made this step because I have always loved games and want to
+            I'm taking this step because I have always loved games and want to
             give myself the skills to be able to work on them or any other
             projects that catch my eye.
           </p>
