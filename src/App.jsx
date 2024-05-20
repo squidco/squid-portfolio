@@ -30,9 +30,17 @@ function App() {
         "Mongoose",
         "Axios",
         "NPM",
-        "Node",
-        "Vite.js"
+        "Vite.js",
       ],
+    },
+    {
+      title: "Curve Area Estimator",
+      image: "./assets/images/CAE.png",
+      repoURL: "https://github.com/SquidDOTjpeg/curve-area-estimator",
+      deployedURL: "https://stupidrectangles.netlify.app/",
+      description:
+        "A fast way to estimate the area under a curve using an equation, domain, and the number of rectangles. Take the busy work out of Calculus 1!",
+      technologiesUsed: ["React", "Node", "Tailwind CSS", "NPM", "Vite.js"],
     },
   ]);
 
@@ -46,10 +54,10 @@ function App() {
   function handleThemeToggle() {
     if (theme === "dark") {
       setTheme("light");
-      localStorage.setItem("theme", "light")
+      localStorage.setItem("theme", "light");
     } else {
       setTheme("dark");
-      localStorage.setItem("theme", "dark")
+      localStorage.setItem("theme", "dark");
     }
   }
 
@@ -79,7 +87,11 @@ function App() {
 
         <ContentContainer id="about">
           <h1 className="outline">Hello there,</h1>
-          <img src="./assets/images/profile-picture.jpg" alt="A picture of a blonde guy who happens to be myself" className="profile-picture" />
+          <img
+            src="./assets/images/profile-picture.jpg"
+            alt="A picture of a blonde guy who happens to be myself"
+            className="profile-picture"
+          />
           <p>
             <span className="bold">I'm Anthony Pillow:</span> photographer, rock
             climber, and full stack web developer.
