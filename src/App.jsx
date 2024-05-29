@@ -93,25 +93,26 @@ function App() {
             className="profile-picture"
           />
           <p>
-            <span className="bold">I'm Anthony Pillow:</span> photographer, rock
-            climber, and full stack web developer.
+            <span className="bold">I&apos;m Anthony Pillow:</span> photographer,
+            rock climber, gamer, and full stack web developer.
           </p>
           <p>
-            I love working on{" "}
-            <span className="big-text bold">BIG PROJECTS</span> as well as
-            focusing on the{" "}
-            <span className="thin italicized">tiny details</span>. Working on a
-            team gives me motivation and energy to contribute to something
-            bigger than my individual efforts could create.
+            I love coding because it is a chance to exercise my critical
+            thinking and problem solving skills while creating a useful product.
+            I also love working with a team because it galvanizes and emboldens
+            those who are a part of it, allowing the team to tackle bigger
+            issues. As Caesar says,{" "}
+            <span className="bold">&quot;Apes Together Strong.&quot;</span>
           </p>
           <p>
-            I have completed a 6 month web development boot camp and am going
-            back to college in 2024 where I will be studying Computer Science.
-            I'm taking this step because I have always loved games and want to
-            give myself the skills to be able to work on them or any other
-            projects that catch my eye.
+            I have been a Instructional Specialist assisting a Web Development
+            boot camp going on four years now. In that time I have offered my
+            knowledge of Web Development and programming fundamentals to
+            students who often are pursuing career changes. Now I have decided
+            to pursue a Bachelor&apos;s Degree in computer science to broaden my
+            knowledge and opportunities within the computer science field.
           </p>
-          <p>Below are my projects and how to contact me with any inquiries.</p>
+          <p>Below you will find some of my projects for you to take a look at!</p>
         </ContentContainer>
 
         {/* === Projects Section === */}
