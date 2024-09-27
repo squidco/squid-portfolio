@@ -13,38 +13,43 @@ export default function ProjectCard({
   // on click it will open a new page to either the repo or deployed application
 
   return (
-    <div className="project-card">
-      <h1>{title}</h1>
-      <img
-        src={image}
-        alt={`A screenshot of one of ${title}'s webpages`}
-        className="project-image"
-      />
-      <p className="project-description text-center">{description}</p>
-      <ul className="project-tech-list">
-        {technologiesUsed.map((tech) => (
-          <li className="project-tech-item" key={uuid4()}>
-            {tech}
-          </li>
-        ))}
-      </ul>
-      <div className="project-links-container">
-        <a
-          className="nav-links"
-          href={deployedURL}
-          rel="noreferrer"
-          target="_blank"
-        >
-          <span className="project-title">Deployed</span>
-        </a>
-        <a
-          className="nav-links"
-          href={repoURL}
-          rel="noreferrer"
-          target="_blank"
-        >
-          Github
-        </a>
+    <div className="m-3 flex flex-initial flex-row items-center content-center shadow-xl">
+      <div className="flex flex-col relative h-full justify-center">
+        <img
+          src={image}
+          alt={`A screenshot of one of ${title}'s webpages`}
+          className="w-full border-white p-1 z-10 relative rounded"
+        />
+        <div className="splotch-sm"></div>
+        <ul className="project-tech-list z-10">
+          {technologiesUsed.map((tech) => (
+            <li className="project-tech-item text-sm" key={uuid4()}>
+              {tech}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="flex flex-col h-full justify-between pb-1">
+        <h1 className="text-xl">{title}</h1>
+        <p className="text-base mx-2">{description}</p>
+        <div className="project-links-container justify-between">
+          <a
+            className="nav-links"
+            href={deployedURL}
+            rel="noreferrer"
+            target="_blank"
+          >
+            <span className="project-title">Deployed</span>
+          </a>
+          <a
+            className="nav-links"
+            href={repoURL}
+            rel="noreferrer"
+            target="_blank"
+          >
+            Github
+          </a>
+        </div>
       </div>
     </div>
   );
