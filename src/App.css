@@ -73,14 +73,7 @@
   background-color: #fff;
 }
 
-.project-image{
-  width: 100%;
-}
 
-/* 
-.project-description{
-} 
-*/
 
 /* PROJECT CONTAINER */
 
@@ -137,8 +130,36 @@
 
 /* Profile Picture */
 
-.profile-picture{
+.profile-picture {
   display: block;
-  width: 30rem;
+  /* width: 30rem; */
   border-radius: 50%;
+}
+
+/* Splotches */
+
+.splotch {
+  position: absolute;
+  width: 60%;
+  height: 300px;
+  pointer-events: none;
+  border-radius: 120px 20px;
+  opacity: 0.24;
+  box-shadow: rgb(67, 255, 255) 20px 250px 300px;
+  transform: rotate(15deg) translateY(-175%) translateZ(0px);
+}
+
+.splotch-sm {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  border-radius: 120px 20px;
+  opacity: 0.94;
+  box-shadow: rgb(252, 67, 255) 20px 150px 300px 20px,
+    rgb(67, 255, 255) -200px -30px 300px;
+  transform: rotate(0deg) translate(50%, 50%);
+  background-color: transparent;
 }

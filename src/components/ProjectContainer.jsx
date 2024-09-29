@@ -8,15 +8,17 @@ export default function ProjectContainer({ projectArray }) {
   return (
     <div className="project-container">
       {projectArray.map((project) => (
-        <ProjectCard
-          title={project.title}
-          image={project.image}
-          repoURL={project.repoURL}
-          deployedURL={project.deployedURL}
-          description={project.description}
-          technologiesUsed={project.technologiesUsed}
-          key={uuid4()}
-        />
+        <>
+          <ProjectCard
+            title={project.title}
+            image={project.image}
+            repoURL={project.repoURL}
+            deployedURL={project.deployedURL}
+            description={project.description}
+            technologiesUsed={project.technologiesUsed}
+            key={uuid4()}
+          />
+        </>
       ))}
     </div>
   );

@@ -6,13 +6,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import Resume from "./assets/Anthony_Pillow_Current_Resume.pdf";
+import Resume from "./assets/Anthony_Pillow_Resume.pdf";
 import "./App.css";
 import ProjectContainer from "./components/ProjectContainer";
 import ThemeToggle from "./components/ThemeToggle";
 
 function App() {
-  // state to store project objects to be rendered by the project container component
+  // Github URL
+  const githubURL = "https://github.com/squidco"
+  // State to store project objects to be rendered by the project container component
   const [projects] = useState([
     {
       title: "TGBL",
@@ -47,7 +49,7 @@ function App() {
   // Set page theme
   const [theme, setTheme] = useState();
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") || "light";
+    const savedTheme = localStorage.getItem("theme") || "dark";
     setTheme(savedTheme);
   }, []);
 
@@ -63,6 +65,7 @@ function App() {
 
   return (
     <div className="app" data-theme={theme}>
+      <div className="splotch"></div>
       <header>
         <Nav>
           <NavControls>
@@ -85,33 +88,17 @@ function App() {
       <main>
         {/* === About Section === */}
 
-        <ContentContainer id="about">
-          <h1 className="outline">Hello there,</h1>
+        <ContentContainer>
+          <h1 className="outline" id="about">Hello there,</h1>
           <img
             src="./assets/images/profile-picture.jpg"
             alt="A picture of a blonde guy who happens to be myself"
-            className="profile-picture"
+            className="w-48 rounded-full border-white border-2 p-1"
           />
           <p>
             <span className="bold">I'm Anthony Pillow:</span> photographer, rock
-            climber, and full stack web developer.
+            climber, and full stack web developer with 3+ years of experience as a full stack web developer and instructional specialist.
           </p>
-          <p>
-            I love working on{" "}
-            <span className="big-text bold">BIG PROJECTS</span> as well as
-            focusing on the{" "}
-            <span className="thin italicized">tiny details</span>. Working on a
-            team gives me motivation and energy to contribute to something
-            bigger than my individual efforts could create.
-          </p>
-          <p>
-            I have completed a 6 month web development boot camp and am going
-            back to college in 2024 where I will be studying Computer Science.
-            I'm taking this step because I have always loved games and want to
-            give myself the skills to be able to work on them or any other
-            projects that catch my eye.
-          </p>
-          <p>Below are my projects and how to contact me with any inquiries.</p>
         </ContentContainer>
 
         {/* === Projects Section === */}
@@ -133,7 +120,9 @@ function App() {
             </p>
             <p>
               <span>
-                <FontAwesomeIcon icon={faGithub} /> SquidDOTjpeg
+                <a href={githubURL} rel="noreferrer" target="_blank">
+                <FontAwesomeIcon icon={faGithub} />
+                </a>
               </span>
             </p>
           </div>
