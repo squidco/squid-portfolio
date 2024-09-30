@@ -26,7 +26,6 @@ export default function ProjectCard({
   };
 
   useEffect(() => {
-    console.log("USE EFFECT")
     const observer = new IntersectionObserver(callback, options);
     if (domRef.current) observer.observe(domRef.current);
     if (isVisible){
