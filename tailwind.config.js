@@ -16,8 +16,14 @@ export default {
        gradient: "var(--gradient)"
     },
     extend: {
-      boxShadow: {
-        "splotch": ""
+      keyframes: {
+        fadeIn: {
+          "0%": {opacity: "0%"},
+          "100%": {opacity: "100%"}
+        }
+      },
+      animation: {
+        fadeIn: "fadeIn 1s ease-in 1"
       }
     },
   },

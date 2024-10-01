@@ -37,7 +37,7 @@ function App() {
   ]);
 
   return (
-    <>
+    <main className="animate-fadeIn">
       {/* === About Section === */}
 
       <ContentContainer>
@@ -62,7 +62,7 @@ function App() {
         <h1 className="outline">Projects</h1>
         <ProjectContainer projectArray={projects} />
       </ContentContainer>
-    </>
+    </main>
   );
 }
 

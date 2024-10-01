@@ -1,13 +1,12 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { NavLink, Outlet } from "react-router-dom";
-import NavControls from "../components/NavControls/NavControls";
 import Nav from "../components/Nav/Nav";
 import ThemeToggle from "../components/ThemeToggle";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ContentContainer from "../components/ContentContainer/ContentContainer";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import NavControls from "../components/NavControls/NavControls";
 import Resume from "../assets/Anthony_Pillow_Resume.pdf";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function Layout() {
@@ -31,7 +30,7 @@ export default function Layout() {
   }
 
   return (
-    <div className="app" data-theme={theme}>
+    <div className="app min-h-screen" data-theme={theme}>
       <div className="splotch"></div>
       <header>
         <Nav>
@@ -47,9 +46,9 @@ export default function Layout() {
           </NavControls>
         </Nav>
       </header>
-      <main>
+      
         <Outlet />
-      </main>
+      
       <footer className="flex relative text-center content-center items-center flex-col py-12 mt-5">
         <h1 className="outline">Contact Me</h1>
         <div className="social-links-container">
