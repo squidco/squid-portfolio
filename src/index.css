@@ -1,14 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   /* Variables */
 
   /* Experimenting with the width */
 
-  --max-width: 700px;
+  --max-width: 1000px;
   --text-primary: rgba(10, 10, 10, 0.87);
   --text-secondary: rgb(11, 11, 11);
   --text-tertiary: rgb(102, 102, 102);
-  --background-primary: #e6e6e6;
+  --background-primary: #FFFFFF;
   --background-secondary: rgb(234, 224, 211);
+  --gradient: linear-gradient(90deg, rgba(219,123,7,1) 0%, rgba(0,183,233,1) 100%);
+
 
   /* Base styling */
 
@@ -50,7 +56,6 @@ a:hover {
 
 body {
   margin: 0;
-  place-items: center;
 }
 
 main {
