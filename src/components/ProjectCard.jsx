@@ -9,6 +9,7 @@ export default function ProjectCard({
   deployedURL,
   description,
   technologiesUsed,
+  status
 }) {
   // Renders a card that has a title, url, and deployedURL on click it will open a new page to either the repo or deployed application
 
@@ -18,18 +19,19 @@ export default function ProjectCard({
 
   function callback(entries) {
     const [entry] = entries;
-      setVisible(entry.isIntersecting);   
+    setVisible(entry.isIntersecting);
   }
 
   const options = {
     threshold: 1,
   };
 
+  // Observer to make card visible when it is in the viewport
   useEffect(() => {
     const observer = new IntersectionObserver(callback, options);
     if (domRef.current) observer.observe(domRef.current);
-    if (isVisible){
-      observer.unobserve(domRef.current)
+    if (isVisible) {
+      observer.unobserve(domRef.current);
     }
     return () => {
       if (domRef.current) observer.unobserve(domRef.current);
@@ -62,16 +64,19 @@ export default function ProjectCard({
         <div className="flex flex-col h-full justify-center">
           <div className="mx-4">
             <h1 className="text-xl text-left">{title}</h1>
+            <p className="text-base bold">Status: {status}</p>
             <p className="text-base">{description}</p>
             <div className="project-links-container justify-between">
-              <a
-                className="nav-links"
-                href={deployedURL}
-                rel="noreferrer"
-                target="_blank"
-              >
-                <span className="project-title">Deployed</span>
-              </a>
+              {deployedURL !== "" && (
+                <a
+                  className="nav-links"
+                  href={deployedURL}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <span className="project-title">Deployed</span>
+                </a>
+              )}
               <a
                 className="nav-links"
                 href={repoURL}
@@ -95,4 +100,5 @@ ProjectCard.propTypes = {
   deployedURL: PropTypes.string,
   description: PropTypes.string,
   technologiesUsed: PropTypes.array,
+  status: PropTypes.string,
 };
