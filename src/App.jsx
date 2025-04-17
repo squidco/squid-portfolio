@@ -7,6 +7,7 @@ const status = {
   LEGACY: "Legacy",
   IN_PROGRESS: "In Progress",
   COMPLETED: "Completed",
+  HIATUS: "Hiatus",
 };
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
       image: "./assets/images/CAE.png",
       repoURL: "https://github.com/SquidDOTjpeg/curve-area-estimator",
       deployedURL: "https://stupidrectangles.netlify.app/",
-      status: status.IN_PROGRESS,
+      status: status.HIATUS,
       description:
         "A fast way to estimate the area under a curve using an equation, domain, and the number of rectangles. Take the busy work out of Calculus 1!",
       technologiesUsed: ["React", "Node", "Tailwind CSS", "NPM", "Vite.js"],
